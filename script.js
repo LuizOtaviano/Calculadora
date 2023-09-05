@@ -66,8 +66,10 @@ teclasNumericas.map(tecla => {
                     displayText.innerHTML = tipoTecla
                     key = false
                 } else {
-                    displayText.innerHTML += tipoTecla
-                    key = false
+                    if (!(ultCaractere == "." && tipoTecla == ".")) {
+                        displayText.innerHTML += tipoTecla
+                        key = false
+                    }
                 }
             }
         }
