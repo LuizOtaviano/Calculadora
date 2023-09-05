@@ -28,6 +28,7 @@
     flex-direction: row-reverse;
     align-items: center;
     overflow-x: auto;
+    overflow-y: hidden;
 }
 
 #teclado {
