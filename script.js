@@ -34,6 +34,11 @@ teclaOn.addEventListener("click", () => {
 
 })
 
+displayText.addEventListener("dblclick", () => {
+    navigator.clipboard.writeText(displayText.innerHTML)
+    alert("Copiado para a area de trasferencia: " + displayText.innerHTML)
+})
+
 //Desliga o display e bloqueia as teclas
 teclaOff.addEventListener("click", () => {
     displayText.innerHTML = ""
